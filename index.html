@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COD: Redefined - Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #0f0f0f;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #0f0f0f;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 4em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #4a9eff,
+                           0 0 20px #4a9eff,
+                           0 0 30px #4a9eff;
+            }
+            to {
+                text-shadow: 0 0 20px #4a9eff,
+                           0 0 30px #4a9eff,
+                           0 0 40px #4a9eff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Coming Soon</h1>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js',
+          {
+            "particles": {
+              "number": {
+                "value": 80,
+                "density": {
+                  "enable": true,
+                  "value_area": 800
+                }
+              },
+              "color": {
+                "value": "#4a9eff"
+              },
+              "shape": {
+                "type": "circle"
+              },
+              "opacity": {
+                "value": 0.5,
+                "random": false
+              },
+              "size": {
+                "value": 3,
+                "random": true
+              },
+              "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#4a9eff",
+                "opacity": 0.4,
+                "width": 1
+              },
+              "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false
+              }
+            },
+            "interactivity": {
+              "detect_on": "canvas",
+              "events": {
+                "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+                },
+                "onclick": {
+                  "enable": true,
+                  "mode": "push"
+                },
+                "resize": true
+              },
+              "modes": {
+                "repulse": {
+                  "distance": 100,
+                  "duration": 0.4
+                },
+                "push": {
+                  "particles_nb": 4
+                }
+              }
+            },
+            "retina_detect": true
+          }
+        );
+    </script>
+</body>
+</html>
